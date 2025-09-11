@@ -9,7 +9,7 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex()],
 	kit: {
 		adapter: adapter(),
-		alias: { "@/*": "./path/to/lib/*", }
+		alias: { '@/*': './path/to/lib/*' }
 	},
 	extensions: ['.svelte', '.svx']
 };

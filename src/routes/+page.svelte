@@ -7,7 +7,7 @@
 </script>
 
 <main
-	class="prose p-2 py-12 prose-zinc md:prose-lg justify-self-center-safe lg:prose-xl dark:prose-invert"
+	class="prose justify-self-center-safe p-2 py-12 prose-zinc md:prose-lg lg:prose-xl dark:prose-invert"
 >
 	<h1>Ome Duo stuur centen neef!</h1>
 

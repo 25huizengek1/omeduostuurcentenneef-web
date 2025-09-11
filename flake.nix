@@ -49,7 +49,16 @@
 
             settings.formatter.bun-format = {
               command = pkgs.lib.getExe pkgs.bun;
-              options = ["run" "format"];
+              options = [
+                "run"
+                "format"
+              ];
+              includes = [
+                "*.svelte"
+                "*.ts"
+                "*.js"
+                "*.css"
+              ];
             };
           };
 
