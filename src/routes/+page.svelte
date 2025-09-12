@@ -21,8 +21,8 @@
 	</div>
 
 	<p class="lead">
-		Hi, my name is Bart Oostveen. If you want to contact me, you should just use one of the above
-		links. Anyway, the rest of this page is just Dutch nonsense. Enjoy!
+		Hi, my name is Bart Oostveen. If you want to contact me, you should use one of the above
+		links. Anyway, the rest of this page is Dutch nonsense. Enjoy!
 	</p>
 
 	<p>Hoe dan ook, op deze server (of nou ja server, gare Hetzner box) staan een aantal services:</p>
@@ -42,10 +42,10 @@
 		</li>
 	</ul>
 
-	<p>Ik ga waarschijnlijk binnenkort deze rommel uitbreiden, maar hey</p>
+	<p>Ik ga waarschijnlijk binnenkort deze rotzooi uitbreiden, maar hey</p>
 	<p>
 		<i
-			>Oja, en deze rommel heeft een aantal vitune.app domeinen, want <a
+			>Oja, en deze server heeft een aantal vitune.app domeinen, want <a
 				href="https://github.com/25huizengek1/ViTune">ViTune</a
 			> is een oud project waarvoor sommige mensen mij nog steeds proberen te bereiken op development@vitune.app</i
 		>
