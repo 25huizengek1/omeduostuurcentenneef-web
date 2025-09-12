@@ -14,7 +14,7 @@ mkBunDerivation {
   packageJson = ./package.json;
 
   nativeBuildInputs = [
-    # TODO: file a pr to bun2nix about this being the only list that cannot be 'overridden'
+    # TODO: remove rsync and bun when https://github.com/baileyluTCD/bun2nix/pull/37 gets merged
     makeWrapper
     rsync
     bun
