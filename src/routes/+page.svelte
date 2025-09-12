@@ -4,6 +4,11 @@
 
 	import GitHubIcon from '@lucide/svelte/icons/github';
 	import EmailIcon from '@lucide/svelte/icons/mail';
+	import FileIcon from '@lucide/svelte/icons/file';
+	import UsersIcon from '@lucide/svelte/icons/users';
+	import EthernetPortIcon from '@lucide/svelte/icons/ethernet-port';
+	import SearchIcon from '@lucide/svelte/icons/search';
+	import LinkButton from '../components/LinkButton.svelte';
 </script>
 
 <main
@@ -21,26 +26,44 @@
 	</div>
 
 	<p class="lead">
-		Hi, my name is Bart Oostveen. If you want to contact me, you should use one of the above
-		links. Anyway, the rest of this page is Dutch nonsense. Enjoy!
+		Hi, my name is Bart Oostveen. If you want to contact me, you should use one of the above links.
+		Anyway, the rest of this page is Dutch nonsense. Enjoy!
 	</p>
 
 	<p>Hoe dan ook, op deze server (of nou ja server, gare Hetzner box) staan een aantal services:</p>
-	<ul class="">
-		<li>
-			<a href="https://fs.omeduostuurcentenneef.nl">Omeduoparty</a>, oftewel, een
-			<a href="https://github.com/9001/copyparty/">copyparty</a>
-			fileserver met allerlei rommel
-		</li>
-		<li><a href="https://discourse.omeduostuurcentenneef.nl">Discourse</a>, want ja idk</li>
-		<li><a href="https://search.vitune.app/">NüschtOS Search</a>, want handig</li>
-		<li>
-			<a href="https://headscale.vitune.app/">Headscale</a>, maar daar mag je lekker niet op haha
-		</li>
-		<li>
-			<a href="https://webmail.omeduostuurcentenneef.nl">Webmail</a> ofzo
-		</li>
-	</ul>
+
+	<div class="flex flex-wrap justify-center gap-2">
+		<LinkButton href="https://fs.omeduostuurcentenneef.nl">
+			{#snippet icon()}
+				<FileIcon />
+			{/snippet}
+			Omeduoparty
+		</LinkButton>
+		<LinkButton href="https://discourse.omeduostuurcentenneef.nl">
+			{#snippet icon()}
+				<UsersIcon />
+			{/snippet}
+			Discourse
+		</LinkButton>
+		<LinkButton href="https://search.vitune.app">
+			{#snippet icon()}
+				<SearchIcon />
+			{/snippet}
+			NüschtOS Search
+		</LinkButton>
+		<LinkButton href="https://headscale.vitune.app">
+			{#snippet icon()}
+				<EthernetPortIcon />
+			{/snippet}
+			Headscale
+		</LinkButton>
+		<LinkButton href="https://webmail.omeduostuurcentenneef.nl">
+			{#snippet icon()}
+				<EmailIcon />
+			{/snippet}
+			Webmail
+		</LinkButton>
+	</div>
 
 	<p>Ik ga waarschijnlijk binnenkort deze rotzooi uitbreiden, maar hey</p>
 	<p>
@@ -52,9 +75,12 @@
 	</p>
 
 	<p>Mocht je nu nog denken, wie is deze staatsmongool die deze boel in de lucht houdt? Nou...</p>
-	<a href="https://github.com/25huizengek1"
-		><Button variant="outline" class="cursor-pointer"><GitHubIcon />Bart Oostveen</Button></a
-	>
+	<LinkButton href="https://github.com/25huizengek1">
+		{#snippet icon()}
+			<GitHubIcon />
+		{/snippet}
+		Bart Oostveen
+	</LinkButton>
 </main>
 
 <div class="fixed top-0 justify-self-end p-4">
