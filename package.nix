@@ -14,10 +14,7 @@ mkBunDerivation {
   packageJson = ./package.json;
 
   nativeBuildInputs = [
-    # TODO: remove rsync and bun when https://github.com/baileyluTCD/bun2nix/pull/37 gets merged
     makeWrapper
-    rsync
-    bun
   ];
 
   buildPhase = ''
