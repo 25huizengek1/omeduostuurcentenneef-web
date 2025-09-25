@@ -228,6 +228,24 @@
     url = "https://registry.npmjs.org/@eslint/plugin-kit/-/plugin-kit-0.3.5.tgz";
     hash = "sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w==";
   };
+  "@floating-ui/core" = {
+    out_path = "@floating-ui/core";
+    name = "@floating-ui/core@1.7.3";
+    url = "https://registry.npmjs.org/@floating-ui/core/-/core-1.7.3.tgz";
+    hash = "sha512-sGnvb5dmrJaKEZ+LDIpguvdX3bDlEllmv4/ClQ9awcmCZrlx5jQyyMWFM5kBI+EyNOCDDiKk8il0zeuX3Zlg/w==";
+  };
+  "@floating-ui/dom" = {
+    out_path = "@floating-ui/dom";
+    name = "@floating-ui/dom@1.7.4";
+    url = "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.7.4.tgz";
+    hash = "sha512-OOchDgh4F2CchOX94cRVqhvy7b3AFb+/rQXyswmzmGakRfkMgoWVjfnLWkRirfLEfuD4ysVW16eXzwt3jHIzKA==";
+  };
+  "@floating-ui/utils" = {
+    out_path = "@floating-ui/utils";
+    name = "@floating-ui/utils@0.2.10";
+    url = "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.10.tgz";
+    hash = "sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==";
+  };
   "@humanfs/core" = {
     out_path = "@humanfs/core";
     name = "@humanfs/core@0.19.1";
@@ -251,6 +269,12 @@
     name = "@humanwhocodes/retry@0.4.3";
     url = "https://registry.npmjs.org/@humanwhocodes/retry/-/retry-0.4.3.tgz";
     hash = "sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==";
+  };
+  "@internationalized/date" = {
+    out_path = "@internationalized/date";
+    name = "@internationalized/date@3.9.0";
+    url = "https://registry.npmjs.org/@internationalized/date/-/date-3.9.0.tgz";
+    hash = "sha512-yaN3brAnHRD+4KyyOsJyk49XUvj2wtbNACSqg0bz3u8t2VuzhC8Q5dfRnrSxjnnbDb+ienBnkn1TzQfE154vyg==";
   };
   "@isaacs/fs-minipass" = {
     out_path = "@isaacs/fs-minipass";
@@ -512,6 +536,12 @@
     name = "@sveltejs/vite-plugin-svelte-inspector@5.0.1";
     url = "https://registry.npmjs.org/@sveltejs/vite-plugin-svelte-inspector/-/vite-plugin-svelte-inspector-5.0.1.tgz";
     hash = "sha512-ubWshlMk4bc8mkwWbg6vNvCeT7lGQojE3ijDh3QTR6Zr/R+GXxsGbyH4PExEPpiFmqPhYiVSVmHBjUcVc1JIrA==";
+  };
+  "@swc/helpers" = {
+    out_path = "@swc/helpers";
+    name = "@swc/helpers@0.5.17";
+    url = "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.17.tgz";
+    hash = "sha512-5IKx/Y13RsYd+sauPb2x+U/xZikHjolzfuDgTAl/Tdf3Q8rslRvC19NKDLgAJQ6wsqADk10ntlv08nPFw/gO/A==";
   };
   "@tailwindcss/node" = {
     out_path = "@tailwindcss/node";
@@ -809,6 +839,12 @@
     name = "balanced-match@1.0.2";
     url = "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz";
     hash = "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==";
+  };
+  "bits-ui" = {
+    out_path = "bits-ui";
+    name = "bits-ui@2.11.4";
+    url = "https://registry.npmjs.org/bits-ui/-/bits-ui-2.11.4.tgz";
+    hash = "sha512-OlVBJhNUMDHbIAf8oDAyPchIrU8b1S5NAMm6enMZSKx5HKcf/QPI485/BL1r4EPlv4O3m45e59hBRCETtYFdxg==";
   };
   "brace-expansion" = {
     out_path = "brace-expansion";
@@ -1170,6 +1206,12 @@
     url = "https://registry.npmjs.org/imurmurhash/-/imurmurhash-0.1.4.tgz";
     hash = "sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==";
   };
+  "inline-style-parser" = {
+    out_path = "inline-style-parser";
+    name = "inline-style-parser@0.2.4";
+    url = "https://registry.npmjs.org/inline-style-parser/-/inline-style-parser-0.2.4.tgz";
+    hash = "sha512-0aO8FkhNZlj/ZIbNi7Lxxr12obT7cL1moPfE4tg1LkX7LlLfC6DeX4l2ZEud1ukP9jNQyNnfzQVqwbwmAATY4Q==";
+  };
   "is-core-module" = {
     out_path = "is-core-module";
     name = "is-core-module@2.16.1";
@@ -1431,6 +1473,30 @@
     url = "https://registry.npmjs.org/mkdirp/-/mkdirp-3.0.1.tgz";
     hash = "sha512-+NsyUUAZDmo6YVHzL/stxSu3t9YS1iljliy3BSDrXJ/dkn1KYdmtZODGGjLcc9XLgVVpH4KshHB8XmZgMhaBXg==";
   };
+  "mode-watcher" = {
+    out_path = "mode-watcher";
+    name = "mode-watcher@1.1.0";
+    url = "https://registry.npmjs.org/mode-watcher/-/mode-watcher-1.1.0.tgz";
+    hash = "sha512-mUT9RRGPDYenk59qJauN1rhsIMKBmWA3xMF+uRwE8MW/tjhaDSCCARqkSuDTq8vr4/2KcAxIGVjACxTjdk5C3g==";
+  };
+  "mode-watcher/runed" = {
+    out_path = "mode-watcher/node_modules/runed";
+    name = "runed@0.25.0";
+    url = "https://registry.npmjs.org/runed/-/runed-0.25.0.tgz";
+    hash = "sha512-7+ma4AG9FT2sWQEA0Egf6mb7PBT2vHyuHail1ie8ropfSjvZGtEAx8YTmUjv/APCsdRRxEVvArNjALk9zFSOrg==";
+  };
+  "mode-watcher/svelte-toolbelt" = {
+    out_path = "mode-watcher/node_modules/svelte-toolbelt";
+    name = "svelte-toolbelt@0.7.1";
+    url = "https://registry.npmjs.org/svelte-toolbelt/-/svelte-toolbelt-0.7.1.tgz";
+    hash = "sha512-HcBOcR17Vx9bjaOceUvxkY3nGmbBmCBBbuWLLEWO6jtmWH8f/QoWmbyUfQZrpDINH39en1b8mptfPQT9VKQ1xQ==";
+  };
+  "mode-watcher/svelte-toolbelt/runed" = {
+    out_path = "mode-watcher/node_modules/svelte-toolbelt/node_modules/runed";
+    name = "runed@0.23.4";
+    url = "https://registry.npmjs.org/runed/-/runed-0.23.4.tgz";
+    hash = "sha512-9q8oUiBYeXIDLWNK5DfCWlkL0EW3oGbk845VdKlPeia28l751VpfesaB/+7pI6rnbx1I6rqoZ2fZxptOJLxILA==";
+  };
   "mri" = {
     out_path = "mri";
     name = "mri@1.2.0";
@@ -1641,6 +1707,12 @@
     url = "https://registry.npmjs.org/run-parallel/-/run-parallel-1.2.0.tgz";
     hash = "sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==";
   };
+  "runed" = {
+    out_path = "runed";
+    name = "runed@0.31.1";
+    url = "https://registry.npmjs.org/runed/-/runed-0.31.1.tgz";
+    hash = "sha512-v3czcTnO+EJjiPvD4dwIqfTdHLZ8oH0zJheKqAHh9QMViY7Qb29UlAMRpX7ZtHh7AFqV60KmfxaJ9QMy+L1igQ==";
+  };
   "sade" = {
     out_path = "sade";
     name = "sade@1.8.1";
@@ -1692,6 +1764,12 @@
     url = "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz";
     hash = "sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==";
   };
+  "style-to-object" = {
+    out_path = "style-to-object";
+    name = "style-to-object@1.0.9";
+    url = "https://registry.npmjs.org/style-to-object/-/style-to-object-1.0.9.tgz";
+    hash = "sha512-G4qppLgKu/k6FwRpHiGiKPaPTFcG3g4wNVX/Qsfu+RqQM30E7Tyu/TEgxcL9PNLF5pdRLwQdE3YKKf+KF2Dzlw==";
+  };
   "supports-color" = {
     out_path = "supports-color";
     name = "supports-color@7.2.0";
@@ -1731,6 +1809,36 @@
     url = "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-7.1.0.tgz";
     hash = "sha512-8sLjZwK0R+JlxlYcTuVnyT2v+htpdrjDOKuMcOVdYjt52Lh8hWRYpxBPoKx/Zg+bcjc3wx6fmQevMmUztS/ccA==";
   };
+  "svelte-sonner" = {
+    out_path = "svelte-sonner";
+    name = "svelte-sonner@1.0.5";
+    url = "https://registry.npmjs.org/svelte-sonner/-/svelte-sonner-1.0.5.tgz";
+    hash = "sha512-9dpGPFqKb/QWudYqGnEz93vuY+NgCEvyNvxoCLMVGw6sDN/3oVeKV1xiEirW2E1N3vJEyj5imSBNOGltQHA7mg==";
+  };
+  "svelte-sonner/runed" = {
+    out_path = "svelte-sonner/node_modules/runed";
+    name = "runed@0.28.0";
+    url = "https://registry.npmjs.org/runed/-/runed-0.28.0.tgz";
+    hash = "sha512-k2xx7RuO9hWcdd9f+8JoBeqWtYrm5CALfgpkg2YDB80ds/QE4w0qqu34A7fqiAwiBBSBQOid7TLxwxVC27ymWQ==";
+  };
+  "svelte-toolbelt" = {
+    out_path = "svelte-toolbelt";
+    name = "svelte-toolbelt@0.10.5";
+    url = "https://registry.npmjs.org/svelte-toolbelt/-/svelte-toolbelt-0.10.5.tgz";
+    hash = "sha512-8e+eWTgxw1aiLxhDE8Rb1X6AoLitqpJz+WhAul2W7W58C8KoLoJQf1TgQdFPBiCPJ0Jg5y0Zi1uyua9em4VS0w==";
+  };
+  "svelte-toolbelt/runed" = {
+    out_path = "svelte-toolbelt/node_modules/runed";
+    name = "runed@0.29.2";
+    url = "https://registry.npmjs.org/runed/-/runed-0.29.2.tgz";
+    hash = "sha512-0cq6cA6sYGZwl/FvVqjx9YN+1xEBu9sDDyuWdDW1yWX7JF2wmvmVKfH+hVCZs+csW+P3ARH92MjI3H9QTagOQA==";
+  };
+  "tabbable" = {
+    out_path = "tabbable";
+    name = "tabbable@6.2.0";
+    url = "https://registry.npmjs.org/tabbable/-/tabbable-6.2.0.tgz";
+    hash = "sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==";
+  };
   "tailwind-merge" = {
     out_path = "tailwind-merge";
     name = "tailwind-merge@3.3.1";
@@ -1739,15 +1847,9 @@
   };
   "tailwind-variants" = {
     out_path = "tailwind-variants";
-    name = "tailwind-variants@1.0.0";
-    url = "https://registry.npmjs.org/tailwind-variants/-/tailwind-variants-1.0.0.tgz";
-    hash = "sha512-2WSbv4ulEEyuBKomOunut65D8UZwxrHoRfYnxGcQNnHqlSCp2+B7Yz2W+yrNDrxRodOXtGD/1oCcKGNBnUqMqA==";
-  };
-  "tailwind-variants/tailwind-merge" = {
-    out_path = "tailwind-variants/node_modules/tailwind-merge";
-    name = "tailwind-merge@3.0.2";
-    url = "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.0.2.tgz";
-    hash = "sha512-l7z+OYZ7mu3DTqrL88RiKrKIqO3NcpEO8V/Od04bNpvk0kiIFndGEoqfuzvj4yuhRkHKjRkII2z+KS2HfPcSxw==";
+    name = "tailwind-variants@3.1.1";
+    url = "https://registry.npmjs.org/tailwind-variants/-/tailwind-variants-3.1.1.tgz";
+    hash = "sha512-ftLXe3krnqkMHsuBTEmaVUXYovXtPyTK7ckEfDRXS8PBZx0bAUas+A0jYxuKA5b8qg++wvQ3d2MQ7l/xeZxbZQ==";
   };
   "tailwindcss" = {
     out_path = "tailwindcss";
@@ -1790,6 +1892,12 @@
     name = "ts-api-utils@2.1.0";
     url = "https://registry.npmjs.org/ts-api-utils/-/ts-api-utils-2.1.0.tgz";
     hash = "sha512-CUgTZL1irw8u29bzrOD/nH85jqyc74D6SshFgujOIA7osm2Rz7dYH77agkx7H4FBNxDq7Cjf+IjaX/8zwFW+ZQ==";
+  };
+  "tslib" = {
+    out_path = "tslib";
+    name = "tslib@2.8.1";
+    url = "https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz";
+    hash = "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==";
   };
   "tw-animate-css" = {
     out_path = "tw-animate-css";
