@@ -1,5 +1,5 @@
 import { error, type RequestHandler } from "@sveltejs/kit";
-import { GH_API_KEY, GH_WEBHOOK_SECRET } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { createHmac, timingSafeEqual } from 'node:crypto';
 import z from "zod";
 
@@ -26,7 +26,7 @@ async function handleWebhookRequest(request: WebhookRequest) {
             method: "PATCH",
             headers: {
                 Accept: "application/vnd.github+json",
-                Authorization: `Bearer ${GH_API_KEY}`,
+                Authorization: `Bearer ${env.GH_API_KEY!!}`,
                 "X-GitHub-Api-Version": "2022-11-28"
             },
             body: JSON.stringify({
@@ -41,7 +41,7 @@ async function handleWebhookRequest(request: WebhookRequest) {
             method: "POST",
             headers: {
                 Accept: "application/vnd.github+json",
-                Authorization: `Bearer ${GH_API_KEY}`,
+                Authorization: `Bearer ${env.GH_API_KEY!!}`,
                 "X-GitHub-Api-Version": "2022-11-28"
             },
             body: JSON.stringify({
@@ -85,7 +85,7 @@ function verifySignature(payload: string, webhookSecret: string, webhookSignatur
 export const POST: RequestHandler = async ({ request }) => {
     const blob = await (await request.blob()).text();
     const webhookSignature = request.headers.get("X-Hub-Signature-256") ?? error(400, "bad request");
-    if (!verifySignature(blob, GH_WEBHOOK_SECRET, webhookSignature)) error(403, "unauthorized");
+    if (!verifySignature(blob, env.GH_WEBHOOK_SECRET!!, webhookSignature)) error(403, "unauthorized");
 
     const eventType = request.headers.get("X-GitHub-Event") ?? error(400, "invalid event type");
     if (!subscribedEvents.includes(eventType))
