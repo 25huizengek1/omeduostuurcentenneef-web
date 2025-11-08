@@ -3,8 +3,6 @@
   lib,
   makeWrapper,
   nodejs_24,
-  rsync,
-  bun,
   ...
 }:
 
