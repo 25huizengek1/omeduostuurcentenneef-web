@@ -11,7 +11,7 @@
     };
 
     bun2nix = {
-      url = "github:baileyluTCD/bun2nix";
+      url = "github:nix-community/bun2nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -19,16 +19,16 @@
   nixConfig = {
     extra-substituters = [
       "https://cache.nixos.org"
-      "https://cache.garnix.io"
+      "https://nix-community.cachix.org"
     ];
     extra-trusted-public-keys = [
       "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-      "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
+      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
     ];
   };
 
   outputs =
-    inputs@{ flake-parts, bun2nix, ... }:
+    inputs@{ flake-parts, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [
         "x86_64-linux"
@@ -44,41 +44,23 @@
       perSystem =
         { pkgs, system, ... }:
         {
+          _module.args.pkgs = import inputs.nixpkgs {
+            inherit system;
+            overlays = [ inputs.bun2nix.overlays.default ];
+          };
+
           treefmt = {
             programs.nixfmt.enable = true;
-
-            settings.formatter.bun-format = {
-              command = pkgs.lib.getExe pkgs.bun;
-              options = [
-                "run"
-                "format"
-              ];
-              includes = [
-                "*.svelte"
-                "*.ts"
-                "*.js"
-                "*.css"
-              ];
-            };
           };
 
           devShells.default = pkgs.mkShell {
             packages = with pkgs; [
               nodejs_24
               bun
-              bun2nix.packages.${system}.default
             ];
-
-            env = {
-            };
-
-            shellHook = '''';
           };
 
-          packages.default = pkgs.callPackage ./package.nix bun2nix.lib.${system};
+          packages.default = pkgs.callPackage ./package.nix { };
         };
-
-      flake = {
-      };
     };
 }

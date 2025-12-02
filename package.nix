@@ -1,15 +1,18 @@
 {
-  mkBunDerivation,
+  bun2nix,
   lib,
   makeWrapper,
   nodejs_24,
   ...
 }:
 
-mkBunDerivation {
+bun2nix.mkDerivation {
   src = ./.;
-  bunNix = ./bun.nix;
   packageJson = ./package.json;
+
+  bunDeps = bun2nix.fetchBunDeps {
+    bunNix = ./bun.nix;
+  };
 
   nativeBuildInputs = [
     makeWrapper
