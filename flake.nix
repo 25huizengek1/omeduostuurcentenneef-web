@@ -46,7 +46,12 @@
         {
           _module.args.pkgs = import inputs.nixpkgs {
             inherit system;
-            overlays = [ inputs.bun2nix.overlays.default ];
+            overlays = [
+              inputs.bun2nix.overlays.default
+              (_final: prev: {
+                nodejs = prev.nodejs_25;
+              })
+            ];
           };
 
           treefmt = {
@@ -55,7 +60,7 @@
 
           devShells.default = pkgs.mkShell {
             packages = with pkgs; [
-              nodejs_24
+              nodejs
               bun
             ];
           };

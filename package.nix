@@ -2,7 +2,7 @@
   bun2nix,
   lib,
   makeWrapper,
-  nodejs_24,
+  nodejs,
   ...
 }:
 
@@ -27,7 +27,7 @@ bun2nix.mkDerivation {
   installPhase = ''
     runHook preInstall
     cp -r build $out/
-    makeWrapper ${lib.getExe nodejs_24} $out/bin/omeduostuurcentenneef-web --append-flag "$out"
+    makeWrapper ${lib.getExe nodejs} $out/bin/omeduostuurcentenneef-web --append-flag "$out"
     runHook postInstall
   '';
 }
