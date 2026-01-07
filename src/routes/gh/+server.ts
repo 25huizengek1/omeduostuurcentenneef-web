@@ -64,7 +64,7 @@ async function handleWebhookRequest(request: WebhookRequest) {
         },
         body: JSON.stringify({
           body: `
-This issue has been automatically closed duo to ViTune not being maintained anymore.
+This issue has been automatically closed due to ViTune not being maintained anymore.
 Issues are still open for the sake of handling critical security issues, if there are any.
 
 So, if you **really** believe this issue should not be closed, please reopen, and I'll get back to you as soon as possible.
